@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 :root{
@@ -14,7 +15,7 @@
 
 /* #region debug */
 #debug * {
-    border: 1px dashed;
+    *border: 1px dashed;
 }
 #debug header{ 
     height: ;
@@ -70,13 +71,17 @@
     width: 50%
 }
 #link{
+    display: flex;
+    justify-content: center;
     background-color: var(--discord-header);
     font-style: normal;
 }
 h4{
+    padding: 10%;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-style:;
+    font-weight: lighter;
+    
 }
 .login {
     display: flex;
@@ -84,7 +89,16 @@ h4{
     align-items: center;
     flex-direction: row;
     width: 25%;
+    
 }
+.icon{
+        color: black;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.7rem;
+        background-color: white;
+}
+
 
 
 /* #endregion header */
