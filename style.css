@@ -40,7 +40,9 @@
 .d-flex {
     display: flex;
     }
-
+img{
+    max-width: 100%;
+}
 
 
 /* #endregion utilities */
@@ -75,23 +77,14 @@
     width: 50%;
     color: white;
 }
-/*#link{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--discord-header);
-    align-items: flex-start;
-    padding: 10%;
-        color: white;
-    font-weight: lighter
-    
-} */
+
 a{
     text-decoration: none;
     color:white
 }
 .login {
     display: flex;
-        align-items: center;
+    align-items: center;
     flex-direction: row-reverse;
     width: 25%;
     
@@ -115,13 +108,21 @@ main{
     flex-direction: column;
     width: 100%;
 }
-.section1_main{
+.hero{
+    background: url(./img/jumbo.png) no-repeat ;
+    height: 500px; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+   
+}
+.container{
     display: flex;
     justify-content: center;
     flex-direction: row;
     width: 100%;
-    padding: 20px;
-    background-color: antiquewhite;
+    ;
+    ;
 }
 .block_1{
     display: flex;
@@ -129,7 +130,7 @@ main{
     flex-direction: row;
     width: 60%;
     padding: 100px;
-    background-color: rgb(226, 147, 43);
+    
 }
 .section2_main{
     display: flex;
