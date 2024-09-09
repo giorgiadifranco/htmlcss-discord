@@ -5,24 +5,24 @@
     padding: 0;
     box-sizing:border-box;
 }
-body{
-    background-color: aqua;
-}
 
+:root{
+    --discord-header: #3161e0;
+}
 
 /* #endregion common */
 
 /* #region debug */
-.debug * {
+#debug * {
     border: 1px dashed;
 }
-.debug header{ 
+#debug header{ 
     height: ;
-    background-color: yellow;
+    *background-color: yellow;
 
 }
-.debug nav{
-    background-color: blueviolet;
+#debug div{
+    *background-color: blueviolet;
 }
 
 
@@ -31,42 +31,54 @@ body{
 
 /* #region utilities */
 
-.flex_header{
+.container{
+    width: 80%;
+
+
+}
+.d-flex {
     display: flex;
-    justify-content: ;
-    align-content: center;
-    padding: auto;  
     }
+
+
 
 /* #endregion utilities */
 
 /* #region header */
-header{
+
+#app_header{
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: var(--discord-header);
     width: 100%;
     padding: 10px;
     height: 50px;
-}
-nav{
-    display: flex;
-    width:70%;
-}
+    }
+
 .logo{
     display:flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     width: 25%;
+    background-color: var(--discord-header);
    }
-.link{
+.menu{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%
 }
-.menu {
+#link{
+    background-color: var(--discord-header);
+    font-style: normal;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style:;
+}
+.login {
     display: flex;
     justify-content: flex-end;
     align-items: center;
